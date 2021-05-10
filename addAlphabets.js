@@ -3,3 +3,5 @@ function wordsToMarks(string) {
   return f;
 }
 console.log(wordsToMarks("friendship"));
+console.log(wordsToMarks("pain"));
+console.log(wordsToMarks("love"));
