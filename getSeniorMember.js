@@ -60,6 +60,7 @@ let list2 = [
 ];
 function findSenior(list) {
   let oldest = [...list].sort((a, b) => b.age - a.age)[0];
+  // let oldest = Math.max(...list.map(({ age }) => age));
   return list.filter((v) => v.age === oldest.age);
 }
 console.log(findSenior(list1));
