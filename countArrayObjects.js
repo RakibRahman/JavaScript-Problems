@@ -69,3 +69,15 @@ function countLanguages2(list) {
   return count;
 }
 console.log(countLanguages2(list1));
+/* 
+
+function orderFood(list) {
+  var orders = {};
+  list.forEach(d=>{
+    if(orders[d.meal]) orders[d.meal]++;
+    else orders[d.meal] = 1;
+  });
+  return orders;
+}
+
+*/
