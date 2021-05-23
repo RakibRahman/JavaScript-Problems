@@ -25,3 +25,6 @@ function removeRepeatedValues(arr) {
   return ans;
 }
 console.log(removeRepeatedValues(arr));
+function solve(arr) {
+  return arr.filter((val, i) => arr.lastIndexOf(val) == i);
+}
