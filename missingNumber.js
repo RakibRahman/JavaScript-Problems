@@ -12,3 +12,16 @@ console.log(findMissingNumbers(arr));
 console.log(findMissingNumbers(nums));
 
 console.log("-----");
+//? with indexOf()
+
+const missingNumbers = (arr) => {
+  let missing = new Array();
+  let count = Math.max(...arr);
+  for (var i = 1; i <= count; i++) {
+    if (arr.indexOf(i) == -1) {
+      missing.push(i);
+    }
+  }
+  return missing;
+};
+console.log(missingNumbers(nums));
