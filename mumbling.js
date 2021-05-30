@@ -32,3 +32,18 @@ function accumulate(str) {
 capitalized("d", 9);
 console.log(accumulate("abcd"));
 console.log(accumulate("pain"));
+
+
+----
+//ES6
+function capitalize(str) {
+  return str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
+}
+
+function accum(s) {
+  let cap = s.charAt(0).toUpperCase() + s.slice(1);
+  return s
+    .split("")
+    .map((z, i) => capitalize(z.repeat(i + 1)))
+    .join("-");
+}
