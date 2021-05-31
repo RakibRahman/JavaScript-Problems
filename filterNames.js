@@ -14,6 +14,7 @@ function searchNames(logins) {
     }
   });
   //  return logins.filter(function (login) { return login[0].slice(-1) === '_' });
+  // return logins.filter(a=>a[0].endsWith('_'));
 }
 
 console.log(searchNames(arr));
