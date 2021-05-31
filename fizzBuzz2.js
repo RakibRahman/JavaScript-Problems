@@ -24,10 +24,11 @@ console.log(solution(20));
 // console.log(solution(141));
 
 //! short solution
-function solution(n) {
+function solution2(n) {
   --n;
   const c15 = Math.floor(n / 15);
   const c3 = Math.floor(n / 3) - c15;
   const c5 = Math.floor(n / 5) - c15;
   return [c3, c5, c15];
 }
+console.log(solution2(20));
