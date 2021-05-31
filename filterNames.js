@@ -8,14 +8,18 @@ let arr2 = [
   ["zakir_", "planetzakir"],
 ];
 function searchNames(logins) {
-  return logins.filter((x, i) => {
-    if (logins[i][0].slice(-1) === "_") {
-      return x;
-    }
+  // return logins.filter((x, i) => {
+  //   if (logins[i][0].slice(-1) === "_") {
+  //     return x;
+  //   }
+  // });
+  return logins.filter(function (login) {
+    return login[0].slice(-1) === "_";
   });
-  //  return logins.filter(function (login) { return login[0].slice(-1) === '_' });
-  // return logins.filter(a=>a[0].endsWith('_'));
 }
-
+function filterNames(names) {
+  return names.filter((name) => name[0].endsWith("_"));
+}
 console.log(searchNames(arr));
 console.log(searchNames(arr2));
+console.log(filterNames(arr));
