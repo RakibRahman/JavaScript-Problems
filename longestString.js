@@ -42,3 +42,9 @@ const lomba = ["rakib", "zakir", "nagato"].reduce(
   ""
 );
 console.log(lomba);
+
+//sort method
+let sorted = ["rakib", "zakir", "nagato"].sort(
+  (a, b) => b.length - a.length
+)[0];
+console.log(sorted);
