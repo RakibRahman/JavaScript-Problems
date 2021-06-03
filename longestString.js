@@ -33,3 +33,12 @@ function findLongest3(str) {
 }
 console.log(findLongest3("killer name is akatsuki"));
 console.log(findLongest("killer name is akatsuki"));
+
+//Reduce Method
+
+const lomba = ["rakib", "zakir", "nagato"].reduce(
+  (longest, currentWord) =>
+    currentWord.length > longest.length ? currentWord : longest,
+  ""
+);
+console.log(lomba);
