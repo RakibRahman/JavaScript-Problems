@@ -9,7 +9,7 @@ class Song {
     for (let str of listeners) {
       this.listeners.add(str.toLowerCase());
     }
-    console.log(this.listeners.size - size);
+
     return this.listeners.size - size; //old size - current size = new size
   }
 }
