@@ -5,12 +5,12 @@ class Song {
     this.listeners = new Set();
   }
   howMany(listeners) {
-    let size = this.listeners.size;
+    let oldSize = this.listeners.size;
     for (let str of listeners) {
       this.listeners.add(str.toLowerCase());
     }
 
-    return this.listeners.size - size; //old size - current size = new size
+    return this.listeners.size - oldSize; //current size - oldSize = new size
   }
 }
 const mountMoose = new Song("Mount Moose", "The Snazzy Moose");
