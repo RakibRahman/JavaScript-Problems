@@ -2,14 +2,15 @@ class Song {
   constructor(title, artist) {
     this.title = title;
     this.artist = artist;
-    this.watchers = new Set();
+    this.listeners = new Set();
   }
-  howMany(watchers) {
-    let size = this.watchers.size;
-    for (let str of watchers) {
-      this.watchers.add(str.toLowerCase());
+  howMany(listeners) {
+    let size = this.listeners.size;
+    for (let str of listeners) {
+      this.listeners.add(str.toLowerCase());
     }
-    return this.watchers.size - size;
+    console.log(this.listeners.size - size);
+    return this.listeners.size - size; //old size - current size = new size
   }
 }
 const mountMoose = new Song("Mount Moose", "The Snazzy Moose");
